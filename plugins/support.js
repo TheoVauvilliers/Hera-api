@@ -4,7 +4,7 @@ import fp from 'fastify-plugin'
 // to export the decorators to the outer scope
 
 export default fp(async function (fastify, opts) {
-  fastify.decorate('someSupport', function () {
-    return 'hugs'
-  })
+    fastify.decorate('someSupport', function () {
+        return 'hugs'
+    })
 })

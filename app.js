@@ -8,16 +8,16 @@ const __dirname = path.dirname(__filename)
 export const options = {}
 
 export default async function (fastify, opts) {
-  // Place here your custom code!
-
-
-  fastify.register(AutoLoad, {
-    dir: path.join(__dirname, 'plugins'),
-    options: Object.assign({}, opts)
-  })
-
-  fastify.register(AutoLoad, {
-    dir: path.join(__dirname, 'routes'),
-    options: Object.assign({}, opts)
-  })
+    // Place here your custom code!
+    
+    
+    fastify.register(AutoLoad, {
+        dir: path.join(__dirname, 'plugins'),
+        options: Object.assign({}, opts)
+    })
+    
+    fastify.register(AutoLoad, {
+        dir: path.join(__dirname, 'routes'),
+        options: Object.assign({}, opts)
+    })
 }
